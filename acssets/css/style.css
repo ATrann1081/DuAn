@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Genos", sans-serif;
+  background-color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.21);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  color: white;
+  weight: 1440px;
+  height: 170px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.logo {
+  align-items: center;
+  color: #ffe694;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.login-btn {
+  background-color: #2a9641;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Genos", sans-serif;
+}
+
+.hero {
+  text-align: center;
+  color: orange;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 128px;
+
+  margin-left: 20px;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black,
+    -1px 1px 2px black;
+
+  display: flex;
+  justify-content: center; /* căn giữa theo chiều ngang */
+  align-items: center; /* căn giữa theo chiều dọc */
+  display: flex;
+  justify-content: left; /* căn giữa theo chiều ngang */
+  align-items: center; /* căn giữa theo chiều dọc */
+  text-align: center;
+
+  weight: 797px;
+  height: 317px;
+}
+
+.buttons {
+  margin-top: 100px;
+}
+
+.buttons button {
+  background: linear-gradient(to right, #94ff99, #217c34);
+  color: orange;
+  border: none;
+  padding: 12px 24px;
+  margin: 60px;
+  border-radius: 15px;
+  font-size: 40px;
+  cursor: pointer;
+  font-family: "Genos", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  nav {
+    display: none;
+  }
+}
