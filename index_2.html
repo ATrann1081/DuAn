@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./acssets/css/reset.css" />
+    <link rel="stylesheet" href="./acssets/css/style_2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Genos&display=swap"
+    />
+    <title>VTT - Vũng Tàu Travel</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🌐 VTT</div>
+      <div class="navbar">
+        <nav>
+          <a href="#">Trang chủ</a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Địa điểm &or;</a>
+            <div class="dropdown-menu">
+              <a href="#">Hôm nay ăn gì </a>
+              <a href="#">Vui chơi tại đâu </a>
+              <a href="#">Ngắm cảnh</a>
+              <a href="#">Bãi tắm</a>
+            </div>
+          </div>
+
+          <a href="#">Lập kế hoạch</a>
+          <a href="#">Giới thiệu</a>
+        </nav>
+        <div class="account">
+          <span>👤 Tài Khoản</span>
+          <span>📞 1800 0123</span>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <section class="banner">
+        <div class="banner-text">WELCOME<br />TO<br />VUNG TAU</div>
+        <div class="banner-search">
+          <input type="text" placeholder="📍 Địa điểm bạn muốn đến" />
+          <input type="date" placeholder="📅 Ngày khởi hành" />
+          <input type="text" placeholder="✈️ Địa điểm xuất phát" />
+          <button>🔍 TÌM</button>
+        </div>
+      </section>
+
+      <section class="plan-section">
+        <div class="map">
+          <img src="map-placeholder.jpg" alt="Bản đồ Vũng Tàu" />
+        </div>
+        <div class="plan">
+          <h2>LỊCH TRÌNH</h2>
+          <input type="text" placeholder="Thêm địa điểm" />
+          <input type="date" placeholder="Bắt đầu" />
+          <input type="date" placeholder="Kết thúc" />
+          <button>+ Thêm</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="hot-places">
+      <h2>ĐỊA ĐIỂM HOT NHẤT</h2>
+      <div class="places-grid">
+        <div class="place">
+          <img
+            src="https://th.bing.com/th/id/R.8a1a7baaa2cf25bcee934880d96efa58?rik=wsU%2bcKdMN3xsjg&pid=ImgRaw&r=0"
+            alt="Bến Du Thuyền Marina"
+          />
+          <div class="place-name">Bến Du Thuyền Marina</div>
+        </div>
+        <div class="place">
+          <img
+            src="https://storage.doopedia.co.kr/upload/_upload/jwupload/image/201503/31/20150331153246337/20150331153246337_thumb_1024.JPG"
+            alt="Đồi Con Heo"
+          />
+          <div class="place-name">Đồi Con Heo</div>
+        </div>
+        <div class="place">
+          <img
+            src="https://th.bing.com/th/id/R.2b0140f71f342edbb1642d1cf1b27df8?rik=MYUgMAdbjG7LiA&pid=ImgRaw&r=0"
+            alt="Hồ Mây"
+          />
+          <div class="place-name">Hồ Mây</div>
+        </div>
+        <div class="place">
+          <img
+            src="https://statics.vntrip.vn/data-v2/data-guide/img_content/1461751107_ngon-hai-dang-vung-tau-1.jpg"
+            alt="Ngọn Hải Đăng"
+          />
+          <div class="place-name">Ngọn Hải Đăng</div>
+        </div>
+        <div class="place">
+          <img
+            src="https://th.bing.com/th/id/R.24408c1463bff00a94adbf95a1e46d4c?rik=c02KCn6FfOKUNw&pid=ImgRaw&r=0"
+            alt="Đồi Cừu Suối Nghệ"
+          />
+          <div class="place-name">Đồi Cừu Suối Nghệ</div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script>
+      const toggle = document.querySelector(".dropdown-toggle");
+      const dropdown = document.querySelector(".dropdown");
+
+      toggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown.classList.toggle("open");
+      });
+
+      // Đóng nếu click ra ngoài
+      document.addEventListener("click", (e) => {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove("open");
+        }
+      });
+    </script>
+  </body>
+</html>
